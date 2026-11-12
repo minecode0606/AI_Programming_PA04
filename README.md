@@ -183,26 +183,3 @@ this repackaging does not claim to have re-run or verified the full experiments.
   does not provide an independently downloadable complete activation bundle.
 - **Checkpoints:** The DeepSeek model weights are downloadable, but the
   trained **robustness probe** must be rebuilt from the code.
-
-## GitHub publishing
-
-Upload/extract these files at the **root** of your GitHub repository. Then:
-
-```bash
-git init
-git add .
-git commit -m "Prepare AIMO reproducibility repository"
-git branch -M main
-git remote add origin https://github.com/<OWNER>/<REPOSITORY>.git
-git push -u origin main
-```
-
-If the repository already exists, skip commands that duplicate your
-existing `git init`, branch or remote. Verify rights to redistribute
-problem text and any paper PDFs before publishing.
-
-## Paper
-
-See [paper/paper.pdf](paper/paper.pdf). The included PDF is a previously
-supplied version of the same paper; it was not present in the original ZIP.
-Verify the version before public release.
