@@ -1,0 +1,27 @@
+# Python/editor
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+
+# Generated large artifacts / trained probe checkpoints
+*.npy
+*.npz
+*.joblib
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+artifacts/**/activations/
+artifacts/**/input_ids/
+checkpoints/backbone/
+checkpoints/**/*.bin
+
+# Keep the supplied CSV experiment results and metadata tracked by Git.
